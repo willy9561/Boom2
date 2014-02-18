@@ -116,7 +116,7 @@ static void app_idle(long system_time)
     sprintf( buf, " %.1f fps", fps );
     SetBkMode( hdc, TRANSPARENT );
     SetTextColor( hdc, RGB( 0, 255, 0 ) );
-    TextOut( hdc, 0, 0, buf, strlen(buf) );    
+    TextOut( hdc, 10, 30, buf, strlen(buf) );    
     dd_buffer_back->ReleaseDC( hdc );
   }
   // flips the video buffer
